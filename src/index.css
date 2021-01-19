@@ -1381,3 +1381,156 @@ ul {
     text-align: left;
   }
 }
+
+/* ========================
+    FORM PAGE | LOGIN AND SIGNUP
+=========================== */
+
+.page-content .form-r .form-holder fieldset {
+	border:  2px solid #e5e5e5;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  padding: 0 20px;
+}
+.page-content .form-r .form-holder legend {
+	font-size: 11px;
+	font-weight: 700;
+	color: #999;
+}
+.page-content .form-r .form-holder input,
+.page-content .form-r .form-holder select {
+  width: 100%;
+  padding: 5px 0px 13px;
+  border: none;
+  appearance: unset;
+  -moz-appearance: unset;
+  -webkit-appearance: unset;
+  -o-appearance: unset;
+  -ms-appearance: unset;
+  outline: none;
+  -moz-outline: none;
+  -webkit-outline: none;
+  -o-outline: none;
+  -ms-outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+.page-content .form-r .form-holder input {
+    color: #333;
+}
+.page-content .form-r-total label {
+  width: 146.5px;
+  height: 130px;
+  display: block;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+.page-content .form-r .form-holder select {
+	font-size: 14px;
+  color: #666;
+  font-weight: 600;
+  /* background: #fff url('../images/form-v1-icon.png') no-repeat scroll; */
+  background-position: right 6px center;
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  border:  2px solid #e5e5e5;
+  padding: 10.4px 13px;
+}
+
+.box{
+  border: 2px solid #e5e5e5;
+  padding: 30px;
+  text-align: center;
+}
+.bg-dark{
+  color: #fff;
+}
+
+/* ======================= 
+    Home Button
+========================== */
+.logo-header{
+  padding: 15px 0;
+  text-align: center;
+}
+.logo-header a{
+  border: 1px dotted #152649;
+  padding: 3px 15px;
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #152649;
+}
+.logo-header a span{
+  color: #50e3c2;
+}
+
+/* ======================= 
+    Curriculum Page
+========================= */
+.curriculum{
+  margin: 30px 0;
+  height: 100%;
+}
+.curriculum .card-row{
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.curriculum hr{
+  background: rgba(255, 255, 255, 0.25);
+}
+.curriculum h5{
+  font-size: 17px;
+}
+.curriculum .summary{
+  background: #3e4061;
+  color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.curriculum .details{
+  background: #f8fbfe;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.curriculum .courses p{
+  font-size: .9rem;
+}
+.curriculum .courses{
+  background: #3e4061;
+  color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+}
+.curriculum .courses a{
+  color: #fff;
+}
+@media (max-width: 576px){
+  .curriculum{
+    margin: 50px 0;
+  }
+  .logo-header a{
+    font-size: 1.5rem;
+  }  
+}

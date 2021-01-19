@@ -1,5 +1,5 @@
+import {Link} from 'react-router-dom'
 import courses from '../courses'
-
 
 const CoursesList = () => {
     
@@ -37,7 +37,7 @@ const CoursesList = () => {
                                                     <p>{course.details}</p>
                                                 </div>
                                                 <div className="card-btn">
-                                                    <a href="/" className="btn btn--primary hvr-shine">Read the Curriculum</a>
+                                                    <Link to={`/course/${course.name}`} className="btn btn--primary hvr-shine">Read the Curriculum</Link>
                                                 </div>
                                                 <p>No credit card required</p>
                                             </div>
