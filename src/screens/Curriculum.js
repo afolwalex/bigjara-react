@@ -51,7 +51,7 @@ const Curriculum = ({match}) => {
                                     </p>
                                     <hr />
                                     <div className="text-center">
-                                        <a href="/" className="btn btn--primary hvr-shine">Register</a>
+                                        <Link to="/register" className="btn btn--primary hvr-shine">Register</Link>
                                     </div>
                                 </div>
                                 <div className="col-md-6 details mb-4">

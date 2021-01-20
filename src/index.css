@@ -8,6 +8,9 @@ body {
   color: #1f1f1f;
   background: #fff;
 }
+.signup-page{
+  background: #2e2f46;
+}
 .main{
   overflow: hidden;
 }
@@ -1386,7 +1389,7 @@ ul {
     FORM PAGE | LOGIN AND SIGNUP
 =========================== */
 
-.page-content .form-r .form-holder fieldset {
+.form-r .form-holder fieldset {
 	border:  2px solid #e5e5e5;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1395,13 +1398,13 @@ ul {
   -ms-border-radius: 4px;
   padding: 0 20px;
 }
-.page-content .form-r .form-holder legend {
+.form-r .form-holder legend {
 	font-size: 11px;
 	font-weight: 700;
 	color: #999;
 }
-.page-content .form-r .form-holder input,
-.page-content .form-r .form-holder select {
+.form-r .form-holder input,
+.form-r .form-holder select {
   width: 100%;
   padding: 5px 0px 13px;
   border: none;
@@ -1415,8 +1418,6 @@ ul {
   -webkit-outline: none;
   -o-outline: none;
   -ms-outline: none;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
   font-size: 14px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -1429,10 +1430,10 @@ ul {
   -o-border-radius: 4px;
   -ms-border-radius: 4px;
 }
-.page-content .form-r .form-holder input {
-    color: #333;
+.form-r .form-holder input {
+  color: #333;
 }
-.page-content .form-r-total label {
+.form-r-total label {
   width: 146.5px;
   height: 130px;
   display: block;
@@ -1445,10 +1446,9 @@ ul {
   float: left;
   text-align: center;
 }
-.page-content .form-r .form-holder select {
+.form-r .form-holder select {
 	font-size: 14px;
   color: #666;
-  font-weight: 600;
   /* background: #fff url('../images/form-v1-icon.png') no-repeat scroll; */
   background-position: right 6px center;
   z-index: 1;
@@ -1457,7 +1457,6 @@ ul {
   border:  2px solid #e5e5e5;
   padding: 10.4px 13px;
 }
-
 .box{
   border: 2px solid #e5e5e5;
   padding: 30px;
@@ -1465,6 +1464,30 @@ ul {
 }
 .bg-dark{
   color: #fff;
+}
+.reg-area{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card-area{
+  padding: 0 30px;
+}
+.reg-section .container{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+.reg-section .container p{
+  color: #333;
+  font-weight: 550;
+  font-size: .9rem;;
+}
+.reg-section .boxt{
+  position: relative;
+}
+.reg-section .middle{
+  position: absolute;
+  top: 30%;
+  margin: -25px 0 0 25px;
 }
 
 /* ======================= 

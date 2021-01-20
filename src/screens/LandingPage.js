@@ -1,4 +1,4 @@
-
+import React, {useEffect} from 'react'
 import Header from '../components/Header'
 import Jumbotron from '../components/Jumbotron'
 import Features from '../components/Feature'
@@ -10,6 +10,10 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 
 const LandingPage = () => {
+
+    useEffect(() => {
+        document.body.classList.remove("signup-page")
+    })
     
     return (
         <>

@@ -4,6 +4,7 @@ import {
     Navbar
 } from 'reactstrap'
 import courses from '../courses'
+import {Link} from 'react-router-dom'
 
 const Header = () => {
 
@@ -46,23 +47,23 @@ const Header = () => {
                                         <ul className={`menu-dropdown ${courseCollapse ? 'hide' : ''}`}>
                                             {courses.map((course, i) => (
                                                 <li className="single-item" key={i}>
-                                                    <a href="/">
+                                                    <Link to={`/course/${course.name}`}>
                                                         <h3>{course.name}</h3> 
-                                                    </a>
+                                                    </Link>
                                                 </li>
                                             ))}
                                         </ul>
                                     </li>
-                                    <li className="menu-item"><a href="/">Resources</a></li>
+                                    <li className="menu-item"><Link to="/">Resources</Link></li>
 
-                                    <li className="menu-item"><a href="/">Blog</a></li>
+                                    <li className="menu-item"><Link to="/">Blog</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col">
                             <div className="header-btns">
-                                <a href="/" className="btn btn--transparent">Sign in</a>
-                                <a href="/" className="btn btn--primary hvr-shine">Get Started</a>
+                                <Link to="/sign-in" className="btn btn--transparent">Sign in</Link>
+                                <Link to="/register" className="btn btn--primary hvr-shine">Get Started</Link>
                             </div>
                         </div>
                       

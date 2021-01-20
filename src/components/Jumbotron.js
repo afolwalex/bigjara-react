@@ -9,7 +9,7 @@ const Jumbotron = () => {
                             <h1 className="title h2">Learn and Grow with Bigjara</h1>
                             <p>Learn Software development, Ethical Hacking, Blockchain, ML and IOT; then grow using those skills with Bigjara.</p>
                             <div className="hero-btn">
-                                <a href="/" className="btn btn--primary hvr-shine">Get Started</a>
+                                <a href="/register" className="btn btn--primary hvr-shine">Get Started</a>
                                 <span className="text--info">No credit card required</span>
                             </div>
                         </div>
