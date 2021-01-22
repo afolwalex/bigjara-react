@@ -71,7 +71,7 @@ const Component = () => {
                     </div>
                 </div>
             </div>
-            <Basics />
+            {/* <Basics />
             <Link to="/event">Go to event</Link>
             <div className="container mb-5">
                 <div className="row">
@@ -82,7 +82,7 @@ const Component = () => {
                     ))}
 
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

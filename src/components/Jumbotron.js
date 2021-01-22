@@ -14,7 +14,6 @@ const Jumbotron = () => {
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </section>

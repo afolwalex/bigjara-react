@@ -1,31 +1,44 @@
+import React from 'react'
 
-const Form = () => {
-    return (
-        <div class="page-content">
-		    
-            <div class="form-r">
-                <div class="form-holder">
-                    <fieldset>
-                        <legend>First Name</legend>
-                        <input type="text" class="form-contro" id="first-name" name="first-name" placeholder="First Name" required />
-                    </fieldset>
+class Form extends React.Component{
+
+    constructor(props){
+        super(props)
+        this.state = {
+            username: '',
+            name: ''
+        }
+        this.handleChange = this.handleChange.bind(this)
+    }
+
+    handleChange(event) { 
+	    if (event.target.id == "username") {
+		    this.setState({
+			    username : event.target.value 
+		    })
+		}
+    }
+    
+    render(){
+        return(
+            <>
+                <div className="container mt-5">
+                   <div className="row">
+                       <div className="col-md-6">
+                           <input type="text" 
+                            className="form-control mb-3" 
+                            placeholder="Username" 
+                            id="username"
+                            value={this.state.username}
+                            onChange={this.handleChange}
+                           />
+                           <input type="text" className="form-control mb-3" placeholder="Name" />
+                       </div>
+                   </div>
                 </div>
-            </div>
-            <div class="form-r form-row-date">
-                <div class="form-holder form-holder-2">
-                    <label class="special-label">Birth Date:</label>
-                    <select name="month" id="month">
-                        <option value="MM" disabled selected>MM</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                    </select>
-                </div>
-            </div>
-                                
-        </div>
-    )
+            </>
+        )
+    }
 }
 
 export default Form

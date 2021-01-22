@@ -1557,3 +1557,11 @@ ul {
     font-size: 1.5rem;
   }  
 }
+
+/* Tutorial Stylings */
+.tutorial-home{
+  padding-top: 30px;
+}
+.tutorial-home .lists ul{
+  list-style: square;
+}
