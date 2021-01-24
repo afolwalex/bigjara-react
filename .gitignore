@@ -10,6 +10,7 @@ node_modules/
 # testing
 /coverage
 /src/tutorials
+/src/website
 
 # production
 /build
