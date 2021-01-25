@@ -23,22 +23,23 @@ const RegisterPage = ({history}) => {
     const dispatch = useDispatch()
 
     const userRegister = useSelector((state) => state.userRegister)
-    const { loading, error, userReg } = userRegister
+    const { loading, error, userReg, success } = userRegister
 
     useEffect(() => {
         document.body.classList.add("signup-page")
-    }, [])
+        if(success){
+            history.push(`/verification?id=${userReg._id}`)
+        }
+    }, [success, userReg, history])
 
     const handleSubmit = (e) => {
         e.preventDefault()
         if(name !== '' && username !== '' && mobile !== '' && residence !== '' && lga !== ''
         && course !== '' && type !== ''){
             dispatch(register(name, email, mobile, mobile, username, course, type, residence, lga))
-            setVariant('info')
-            setMessage('Your details has been sent successfully.')
-            setTimeout(() => {
-                history.push(`/verification?id=${userReg._id}`)
-            }, 2000)
+            setVariant('success')
+            setMessage('Please wait....')
+                
         }else{
             setVariant('danger')
             setMessage('Please fill all fields.')
