@@ -1472,6 +1472,11 @@ ul {
 .card-area{
   padding: 0 30px;
 }
+@media(max-width: 576px){
+  .card-area{
+    padding: 0 8px;
+  }
+}
 .reg-section .container{
   margin-top: 70px;
   margin-bottom: 30px;
